@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css?family=Khula|Permanent+Marker&display=swap');
+
+html,
+body {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    flex-flow: column;
+    
+    max-width: 100%;
+}
+
+/********** Mobile Layouts*******/
+
+.intro-page-container {
+    text-align: center;
+    background-color: #E4DFDA;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.intro-page-container h1 {
+    text-align: left;
+    font-size: 44px;
+    font-family: "Permanent Marker", sans-serif;
+    letter-spacing: .3rem;
+}
+
+.intro-page-container p {
+    font-family: "Permanent Marker", sans-serif;
+    text-align: left;
+    font-size: 1em;
+    font-weight: 100;
+    line-height: 2em;
+    margin: 2em auto;
+    letter-spacing: .1;
+}
+
+figure {
+    text-align: center;
+}
+
+figure img {
+    margin: .5em auto 0;
+    width: 100%;
+    max-width: 40vw;
+    
+}
+
+/******* Nav Bar*******/
+
+header {
+    display: flex;
+}
+a {
+    font-family: "Permanent Marker", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+nav {
+  width:100%;
+  padding: 10px 10px;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+   list-style-type: none;
+   justify-content: center;
+   width: 100%;
+   margin: 0;
+   padding: 0;
+}
+
+.nav_links li {
+   margin: 0 1em;
+    display: inline-block;
+}
+
+a {
+    color: #C2666B;
+    
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+    font-size: 16px;
+}
+
+.nav_links li a:hover {
+    color: #C1666B;
+}
+
+/******************* About me**************/
+
+.about-me-container {
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #C2666B;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.about-me-left-hero-section {
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.about-me-left-hero-section h2 {
+    padding: 0px;
+    font-size: 44px;
+    font-family: "Permanent Marker", sans-serif;
+
+}
+
+.about-me-left-hero-section p {
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 2;
+    font-weight: 20;
+    font-size: 16px;
+    text-align: left;
+    font-family: "Khula", sans-serif;
+}
+
+/************Projects*********************/
+
+.projects-container {
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #48A9A6;
+    max-height: auto;
+}
+
+.projects-container h2 {
+    font-size: 44px;
+    font-family: "Permanent Marker", sans-serif;
+    letter-spacing: .3rem;
+     padding-left: 10px;
+}
+
+.box-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.single-box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 400px;
+    border-radius: 10px;
+    background-color: #FFC493;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    transition: .3s;
+}
+
+.img-area-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border: 6px solid #fff;
+    border-radius: 10%;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-size: cover;
+    background-image: url("./img/1.jpg");
+    background-position: center center;
+}
+
+.img-area-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border: 6px solid #fff;
+    border-radius: 10%;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-size: cover;
+    background-image: url("./img/bookmark.png");
+    background-position: center center;
+}
+
+.img-area-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border: 6px solid #fff;
+    border-radius: 10%;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-size: cover;
+    background-image: url("./img/forest.png");
+    background-position: center center;
+}
+
+.header-text {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+.img-text {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    flex-direction: column;
+    font-family: "Khula", sans-serif;
+    text-align: left;
+    padding-top: 20px;
+}
+
+.img-text p:first-of-type {
+    flex:1;
+}
+
+.img-text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.img-text a {
+    font-color: white;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E4DFDA;
+}
+
+.footer-container p {
+    background-color: #E4DFDA;
+}
+
+.footer-container h1 {
+    font-family: "Permanent Marker", sans-serif;
+    font-size: 44px;
+    font-weight: 100;
+    line-height: 1.5em;
+    letter-spacing: .1;
+
+}
+
+    @media screen and (min-width: 820px) {
+       
+        a {
+            font-size: 25px;
+        }
+
+        nav ul li {
+            padding: 0.5em 2em;
+        }
+
+      nav ul {
+            justify-content: flex-end;
+        }
+
+        .intro-page-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 550px;
+        }
+
+        .intro-page-container > div {
+            flex: 1;
+        }
+
+        .left-hero-section {
+            padding-left: 5px;
+        }
+        .intro-page-container h1 {
+            font-size: 44px;
+        }
+
+        .intro-page-container p {
+            padding: 0;
+            font-size: 20px;
+        }
+
+      
+
+      .profile-photo {
+       
+      }
+
+      figure {
+          display: inline-block;
+      }
+
+
+        .left-hero-section {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .product-box-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .box-area {
+            width: 40%;
+    }
+    .single-box:not(.space) {
+        min-height: 700px;
+    }
+    }
+
